@@ -1,0 +1,81 @@
+// 레이아웃 스타일링
+
+// 네비게이션
+.navBar {
+  // 여기다가 투명도를 두어서 밑에 가리는 애들이 살짝 보이게 하자.
+  position: fixed;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  padding-top: 12px;
+  height: 3rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+
+  .home {
+    margin-left: 12px;
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+  }
+  .menu1,
+  .menu2 {
+    margin-right: 12px;
+    padding: 12px;
+  }
+}
+
+.mainWrap,
+.aboutWrap,
+.portfolioWrap {
+  position: relative;
+}
+
+.main,
+.about,
+.portfolios {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.next,
+.previous {
+  position: absolute;
+  font-size: 2rem;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrows {
+  position: absolute;
+  font-size: 2rem;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  a {
+    padding: 8px;
+  }
+}
+
+// 맨 위로 스크롤 화살표
+
+.toTop {
+  position: fixed;
+  top: 95%;
+  left: 95%;
+  font-size: 2rem;
+
+  z-index: 5;
+}
+
+.hide {
+  display: none;
+}
