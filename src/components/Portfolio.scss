@@ -1,0 +1,47 @@
+.portfolios {
+  .item1,
+  .item2 {
+    margin-top: 8rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+  .projectIssues {
+    color: black;
+  }
+
+  .scale {
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+  }
+
+  .description:hover .scale {
+    transform: scale(1.1, 1.1);
+  }
+
+  .icons1 {
+    font-size: 1.8rem;
+  }
+
+  .issue {
+    border: 1px solid black;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  a {
+    padding: 8px;
+  }
+
+  // 두번째 아이템
+  .omokImg {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+  }
+}

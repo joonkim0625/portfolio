@@ -7,4 +7,34 @@
     padding: 8px;
     margin: 8px;
   }
+
+  &.animateIcons {
+    a {
+      display: inline-block;
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px transparent;
+
+      &:hover {
+        animation-name: icon-wobble;
+        animation-duration: 0.75s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+      }
+    }
+  }
+
+  @keyframes icon-wobble {
+    25% {
+      transform: translateY(-8px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    75% {
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 }

@@ -16,28 +16,48 @@
   z-index: 5;
 
   .home {
-    margin-left: 12px;
+    margin-left: 4rem;
     padding: 12px;
     text-decoration: none;
     color: black;
   }
+
+  .menuWrap {
+    margin-right: 2rem;
+  }
+
   .menu1,
   .menu2 {
-    margin-right: 12px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 2rem;
     padding: 12px;
+  }
+
+  // 메뉴 아이템들의 호버 이벤트
+  .scale {
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+  }
+
+  .menu1:hover .scale,
+  .menu2:hover .scale {
+    transform: scale(1.1, 1.1);
   }
 }
 
 .mainWrap,
 .aboutWrap,
 .portfolioWrap {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main,
 .about,
 .portfolios {
-  min-height: 100vh;
+  min-height: 95vh;
 
   display: flex;
   flex-direction: column;
@@ -46,28 +66,19 @@
 }
 
 .next,
-.previous {
-  position: absolute;
-  font-size: 2rem;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
+.previous,
 .arrows {
-  position: absolute;
+  cursor: pointer;
   font-size: 2rem;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  a {
-    padding: 8px;
+  span {
+    padding: 0 8px;
   }
 }
 
 // 맨 위로 스크롤 화살표
 
 .toTop {
+  cursor: pointer;
   position: fixed;
   top: 95%;
   left: 95%;

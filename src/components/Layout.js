@@ -60,18 +60,23 @@ export default class Layout extends Component {
           <a className="home" href="/">
             Joon's
           </a>
-          <div className="menu">
-            <Link to="element1" spy={true} smooth={true} duration={500}>
-              <span className="menu1">about</span>
-            </Link>
-            <Link to="element2" spy={true} smooth={true} duration={500}>
-              <span className="menu2">portfolio</span>
-            </Link>
+          <div className="menuWrap">
+            <div className="menu1">
+              <Link to="element1" spy={true} smooth={true} duration={500}>
+                <div className="item1 scale">About</div>
+              </Link>
+            </div>
+            <div className="menu2">
+              <Link to="element2" spy={true} smooth={true} duration={500}>
+                <div className="item2 scale">Portfolio</div>
+              </Link>
+            </div>
           </div>
         </nav>
         <Element name="element0">
           <div className="mainWrap">
             <Main />
+
             <Link to="element1" spy={true} smooth={true} duration={500}>
               <span className="next">
                 <FontAwesomeIcon icon={faArrowDown} />
@@ -111,8 +116,6 @@ export default class Layout extends Component {
             </Link>
           </div>
         </Element>
-
-        <div className="footer">2019 김현준</div>
 
         <div className={`toTop ${classHide}`} onClick={this.scrollToTop}>
           <FontAwesomeIcon icon={faAngleDoubleUp} />
