@@ -27,7 +27,7 @@ export default class Portfolio extends Component {
             </div>
             <p>
               패스트캠퍼스 프론트엔드 스쿨 협업 프로젝트 후, 제가 혼자 몇 가지
-              기능을 추가했습니다.
+              기능을 추가했습니다
             </p>
             <iframe
               title="jogiyo-v2"
@@ -85,7 +85,7 @@ export default class Portfolio extends Component {
             </div>
             <p>
               패스트캠퍼스 협업 프로젝트 종료 후, 제가 기능과 약간의 디자인을
-              추가했습니다.
+              추가했습니다
             </p>
 
             <img
@@ -93,11 +93,11 @@ export default class Portfolio extends Component {
               src="https://i.postimg.cc/jdcYXcGZ/2019-01-09-11-29-28.png"
               alt="오목 게임 이미지"
             />
-            <p>턴에 따라 바둑판 위의 커서 색이 플레이어의 돌의 색으로 바뀜.</p>
+            <p>턴에 따라 바둑판 위의 커서 색이 플레이어의 돌의 색으로 바뀜</p>
             <p>
               {" "}
               게임 종료 후, 'restart'를 위해 엔터키 사용 가능, 무르기 기능의
-              추가.
+              추가
             </p>
 
             <p>HTML, CSS, JavaScript</p>

@@ -8,7 +8,7 @@ export default class Main extends Component {
   render() {
     return (
       <div className="main">
-        <p>안녕하세요, 김현준의 포트폴리오 사이트 입니다</p>
+        <p>안녕하세요, 김현준의 포트폴리오 사이트 입니다.</p>
         <div className="icons animateIcons">
           <a
             target="_blank"

@@ -58,7 +58,7 @@ export default class Layout extends Component {
       <div className="container">
         <nav className="navBar">
           <a className="home" href="/">
-            Joon's
+            Hyunjoon's
           </a>
           <div className="menuWrap">
             <div className="menu1">
