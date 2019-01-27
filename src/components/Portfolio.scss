@@ -1,11 +1,15 @@
 .portfolios {
+  padding: 8px;
+  p {
+    margin: 12px 0;
+  }
   .item1,
   .item2 {
     margin-top: 8rem;
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .projectIssues {
     color: black;
@@ -43,5 +47,11 @@
     max-width: 600px;
     width: 100%;
     height: auto;
+  }
+
+  // 다음, 이전 프로젝트 글씨
+
+  .toProject {
+    cursor: pointer;
   }
 }

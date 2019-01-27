@@ -1,6 +1,5 @@
-// 레이아웃 스타일링
-
 // 네비게이션
+
 .navBar {
   // 여기다가 투명도를 두어서 밑에 가리는 애들이 살짝 보이게 하자.
   position: fixed;
@@ -9,14 +8,14 @@
   width: 100%;
   padding-top: 12px;
   height: 3rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 5;
 
   .home {
-    margin-left: 4rem;
+    margin-left: 2rem;
     padding: 12px;
     text-decoration: none;
     color: black;
@@ -73,6 +72,11 @@
   span {
     padding: 0 8px;
   }
+}
+
+.previous {
+  display: inline-block;
+  margin-top: -15px;
 }
 
 // 맨 위로 스크롤 화살표
