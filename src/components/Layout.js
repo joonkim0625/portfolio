@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 import Portfolio from "./Portfolio";
 import "./Layout.scss";
@@ -87,6 +88,7 @@ export default class Layout extends Component {
 
         <Element name="element1">
           <div className="aboutWrap">
+            <div className="aboutTitle">About</div>
             <About />
             <div className="arrows">
               <Link to="element2" spy={true} smooth={true} duration={500}>
@@ -107,13 +109,9 @@ export default class Layout extends Component {
 
         <Element name="element2">
           <div className="portfolioWrap">
+            <div className="portfolioTitle">Portfolio</div>
             <Portfolio />
-            <Link to="element1" spy={true} smooth={true} duration={500}>
-              <span className="previous">
-                {" "}
-                <FontAwesomeIcon icon={faArrowUp} />
-              </span>
-            </Link>
+            <Link to="element1" spy={true} smooth={true} duration={500} />
           </div>
         </Element>
 

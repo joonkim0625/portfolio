@@ -1,7 +1,14 @@
 .main {
+  color: white;
+
   p {
     font-size: 1.5rem;
     font-weight: 400;
+  }
+  .whoAmI {
+    padding: 10px 40px;
+    line-height: 2;
+    font-size: 1.2rem;
   }
 }
 

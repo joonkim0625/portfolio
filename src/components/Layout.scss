@@ -1,3 +1,9 @@
+// 레이아웃 버튼
+
+.next {
+  color: white;
+}
+
 // 네비게이션
 
 .navBar {
@@ -6,9 +12,10 @@
   background: white;
 
   top: 0;
+  left: 0;
   width: 100%;
-  padding-top: 12px;
-  height: 3rem;
+  padding: 12px;
+  height: 70px;
   font-size: 1.6rem;
   display: flex;
   align-items: center;
@@ -57,7 +64,7 @@
 .main,
 .about,
 .portfolios {
-  min-height: 95vh;
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -65,19 +72,43 @@
   text-align: center;
 }
 
-.next,
-.previous,
-.arrows {
+.next {
+  position: absolute;
+  top: 92%;
   cursor: pointer;
   font-size: 2rem;
-  span {
-    padding: 0 8px;
+}
+
+.aboutWrap {
+  position: relative;
+  color: white;
+
+  .aboutTitle {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10%;
+    left: -5%;
+  }
+
+  .arrows {
+    position: absolute;
+    top: 92%;
+    cursor: pointer;
+    font-size: 2rem;
+    span {
+      padding: 0 8px;
+    }
   }
 }
 
-.previous {
-  display: inline-block;
-  margin-top: -15px;
+.portfolioWrap {
+  position: relative;
+  .portfolioTitle {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10%;
+    left: -5%;
+  }
 }
 
 // 맨 위로 스크롤 화살표
@@ -85,7 +116,7 @@
 .toTop {
   cursor: pointer;
   position: fixed;
-  top: 95%;
+  top: 93%;
   left: 95%;
   font-size: 2rem;
 

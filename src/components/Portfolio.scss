@@ -1,11 +1,36 @@
+@import "../style/common.scss";
+
+.imgWrap {
+  width: 800px;
+  height: 400px;
+}
+
+.carousel-inner {
+  margin-top: 100px;
+}
+
+.carousel-item.active {
+  height: 600px;
+}
+
 .portfolios {
+  span {
+    cursor: pointer;
+  }
+
+  img {
+    height: 100%;
+  }
+
   padding: 8px;
   p {
     margin: 12px 0;
   }
   .item1,
   .item2 {
-    margin-top: 8rem;
+    margin-top: 10rem;
+    min-height: 100vh;
+    position: relative;
   }
 
   .title {
@@ -51,7 +76,55 @@
 
   // 다음, 이전 프로젝트 글씨
 
-  .toProject {
+  .toNextProject {
+    font-size: 2.5rem;
     cursor: pointer;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include breakpoint("minimum") {
+      font-size: 2rem;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+    }
+
+    @include breakpoint("mobile") {
+      font-size: 2rem;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+    }
+  }
+
+  .toPreviousProject {
+    cursor: pointer;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    @include breakpoint("minimum") {
+      position: absolute;
+      font-size: 2rem;
+      top: 75%;
+      left: 50%;
+    }
+
+    @include breakpoint("mobile") {
+      position: absolute;
+      font-size: 2rem;
+      top: 75%;
+      left: 50%;
+    }
   }
 }
+
+// .c1,
+// .c2 {
+//   padding: 12px;
+//   height: 100%;
+//   width: 100%;
+// }

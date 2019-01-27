@@ -352,15 +352,16 @@ template {
 
 #root {
   min-width: 360px;
-  background: #076585; /* fallback for old browsers */
+
+  background: #0b7285; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to top,
-    #fff,
-    #076585
+    to bottom,
+    #0b7285,
+    #e3fafc
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
-    #fff,
-    #83c5dc
+    #0b7285,
+    #e3fafc
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
