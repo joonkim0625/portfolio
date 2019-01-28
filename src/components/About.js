@@ -5,6 +5,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="about">
+        <div className="aboutTitle">About</div>
         <div className="aboutContent">
           <p>
             우리 생활에서는 이제 빼놓을 수 없는 웹사이트를 개발한다는 것에

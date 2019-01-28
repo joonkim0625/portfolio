@@ -88,7 +88,6 @@ export default class Layout extends Component {
 
         <Element name="element1">
           <div className="aboutWrap">
-            <div className="aboutTitle">About</div>
             <About />
             <div className="arrows">
               <Link to="element2" spy={true} smooth={true} duration={500}>
@@ -109,7 +108,6 @@ export default class Layout extends Component {
 
         <Element name="element2">
           <div className="portfolioWrap">
-            <div className="portfolioTitle">Portfolio</div>
             <Portfolio />
             <Link to="element1" spy={true} smooth={true} duration={500} />
           </div>

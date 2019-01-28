@@ -137,6 +137,7 @@ export default class Portfolio extends Component {
 
     return (
       <div className="portfolios">
+        <div className="portfolioTitle">Portfolios</div>
         {/* <Element name="item1">
           <div className="item1">
             <h1 className="title">조기요 V2</h1>

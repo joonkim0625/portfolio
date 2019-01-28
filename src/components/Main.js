@@ -8,7 +8,6 @@ export default class Main extends Component {
   render() {
     return (
       <div className="main">
-        <p>안녕하세요, 김현준의 포트폴리오 사이트 입니다.</p>
         <p className="whoAmI">
           이제는 일상에서 빼놓을 수 없는, 무엇인가에 대한 정보를 가장 먼저
           접하게 되는 웹사이트를 만든다는 것에

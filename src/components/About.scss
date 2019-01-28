@@ -1,4 +1,10 @@
 .about {
+  .aboutTitle {
+    position: absolute;
+    top: 10%;
+    font-size: 2rem;
+    padding-top: 20px;
+  }
   p {
     font-size: 1.3rem;
     line-height: 1.8;
