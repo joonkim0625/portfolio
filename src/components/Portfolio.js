@@ -100,6 +100,8 @@ export default class Portfolio extends Component {
 
   // ---
 
+  //
+
   render() {
     const { activeIndex } = this.state;
 
@@ -244,6 +246,7 @@ export default class Portfolio extends Component {
           activeIndex={activeIndex}
           next={this.next}
           previous={this.previous}
+          interval={false}
         >
           {slides}
           <CarouselControl
